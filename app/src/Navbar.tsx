@@ -2,14 +2,16 @@ import React from 'react';
 
 const Navbar = () => {
 	return (
-		<nav id="navbar" className="bg-gray-500 flex flex-col text-center sm:flex-row sm:text-left sm:justify-between py-4 px-6 shadow sm:items-baseline w-full">
-			<div className="mb-2 sm:mb-0">
-				<a href="/home" className="text-2xl no-underline text-grey-darkest hover:text-blue-dark">Fastier</a>
-			</div>
-			<div>
-				<a href="/one" className="text-lg no-underline text-grey-darkest hover:text-blue-dark ml-2">User Name</a>
-			</div>
-		</nav>
+		<header className="bg-gray-500 text-white sticky top-0 z-10">
+			<section className='max-w-4xl mx-auto p-4 flex justify-between items-center'>
+				<h1 className='text-3xl font-medium'>
+					<a href="/">⌚Fastier</a>
+				</h1>
+				<div>
+					🧑 Username
+				</div>
+			</section>
+		</header>
 	);
 };
 
